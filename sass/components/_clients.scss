@@ -1,18 +1,28 @@
 .clients {
-    display: flex;
+    width: 450px;
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .clients__link{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    
+    
+  }
   
   .clients__sprite {
+   
     outline: 1px solid #afb1b8;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 208px;
     height: 92px;
     fill: #afb1b8;
-    padding: 16px 32px;
+    padding: 16px 52px;
+    
 
     &:hover,
   &:focus {
@@ -20,8 +30,11 @@
     outline: 1px solid var(--blue-color);
   }
   }
-  
-  .clients__link:not(:last-child) {
-    margin-right: 30px;
+  .clients__link:nth-child(2n){
+    margin-left: 30px;
   }
+  .clients__link:nth-child(5n), .clients__link:nth-child(6n){
+    margin-bottom: 0;
+  }
+  
   

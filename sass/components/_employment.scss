@@ -1,6 +1,10 @@
-.first {
-    padding-top: 94px;
-    padding-bottom: 0px;
+
+  .section-employment{
+    @media screen and(max-width:$mobile){
+      display:none;
+    }
+    
+  
   }
   .container__title {
     font-size: 36px;
