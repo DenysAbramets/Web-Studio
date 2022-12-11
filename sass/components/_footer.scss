@@ -2,12 +2,21 @@
   background-color: var(--secondary-background);
     // min-width: 1600px;
     height: 604px;
+    @media screen and (min-width:768px){
+      height: 463px;
+    }
+    @media screen and (min-width:1200px){
+      height: 252px;
+    }
 
 }
 .thumb {
-  // display: inline-flex;
-  // align-items: baseline;
-  display: block;
+  @media screen and (min-width:1200px){
+    display: inline-flex;
+    align-items: baseline;
+  }
+  
+  
   
 }
 
@@ -15,7 +24,7 @@
   @media screen and (min-width:768px){
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
   }
 }
 .footer-adress {
@@ -76,7 +85,10 @@
 /* Футер sprite */
 .breadcrumbs {
   display: block;
-  // margin-left: 70px;
+  
+  @media screen and(min-width:1200px){
+    margin-left: 70px;
+  }
   
 }
 .breadcrumbs__sprite{

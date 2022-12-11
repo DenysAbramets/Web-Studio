@@ -1,12 +1,18 @@
-// .aside {
-//     padding-left: 93px;
-//   }
+ .aside {
+  @media screen and(min-width:1200px){
+    margin-left: 93px;   
+  }
+     
+    }
   
   
   
   .aside__mail {
-    // display: flex;
-    // justify-content: center;
+    @media screen and(min-width:1200px){
+display: flex;
+  
+    }
+    
     
   }
   
@@ -23,6 +29,9 @@
       display: block;
       margin-right: auto;
       margin-left: auto;
+    }
+    @media screen and(min-width:1200px){
+      width: 358px;
     }
     
     
@@ -52,6 +61,10 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 60px;
+    @media screen and(min-width:1200px){
+      margin-top: 0;
+      margin-left: 12px;
+    }
   }
   
   .aside__button:active {
@@ -68,6 +81,13 @@
     color: var(--white-color);
     display: flex;
     justify-content: center;
+    @media screen and (min-width:768px){
+      margin-top:20px;
+    }
+    @media screen and (min-width:1200px){
+      justify-content: start;
+    }
+    
   }
   
   .aside__icon {

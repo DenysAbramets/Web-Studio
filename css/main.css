@@ -365,6 +365,20 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .aside {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aside__mail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .aside__input {
   width: 100%;
   height: 50px;
@@ -380,6 +394,11 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aside__input {
+    width: 358px;
   }
 }
 
@@ -408,6 +427,12 @@
   margin-top: 20px;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .aside__button {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+}
 
 .aside__button:active {
   color: fuchsia;
@@ -427,6 +452,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .aside__title {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aside__title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 .aside__icon {
@@ -604,6 +641,13 @@ img {
             align-items: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .mobile {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 @media screen and (max-width: 767.97px) {
   .mobile.is-open {
@@ -637,6 +681,11 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
   }
 }
 
@@ -680,6 +729,14 @@ img {
     margin-left: 85px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .link-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 358px;
+  }
+}
 
 @media screen and (max-width: 767.97px) {
   .link-nav__item {
@@ -687,9 +744,14 @@ img {
     margin-top: 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.97px) {
   .link-nav__item:first-child {
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-nav__item:first-child {
+    margin-right: 30px;
   }
 }
 
@@ -817,6 +879,7 @@ img {
   .hero {
     height: 600px;
     max-width: 1600px;
+    padding-top: 200px;
   }
 }
 
@@ -840,6 +903,12 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -946,6 +1015,12 @@ img {
     gap: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .team__item {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1045,6 +1120,11 @@ img {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients {
+    width: 1170px;
+  }
+}
 
 @media screen and (max-width: 479.97px) {
   .clients__link {
@@ -1077,6 +1157,11 @@ img {
 @media screen and (min-width: 768px) {
   .clients__sprite {
     width: 230px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__sprite {
+    width: 170px;
   }
 }
 .clients__sprite:hover, .clients__sprite:focus {
@@ -1196,9 +1281,26 @@ img {
   background-color: var(--secondary-background);
   height: 604px;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 463px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 252px;
+  }
+}
 
-.thumb {
-  display: block;
+@media screen and (min-width: 1200px) {
+  .thumb {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1208,9 +1310,9 @@ img {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1280,6 +1382,11 @@ img {
 /* Футер sprite */
 .breadcrumbs {
   display: block;
+}
+@media screen and (min-width: 1200px) {
+  .breadcrumbs {
+    margin-left: 70px;
+  }
 }
 
 .breadcrumbs__sprite {
