@@ -22,12 +22,40 @@
 .filters {
   display: flex;
   justify-content: center;
-  margin-bottom: 66px;
   list-style: none;
+  @media screen and(max-width:767.97px){
+    display: block;
+   padding: 0;
+   margin-top: 0;
+   margin-bottom: 40px;
+  }
+  @media screen and(min-width:1200px){
+    
+    margin-bottom: 66px;
+    
+  }
+  
 }
-.filters__box:not(:first-child) {
-  margin-left: 8px;
+.filters__box{
+  @media screen and(max-width:767.97px){
+    display: inline-block;
+    &:not(:last-child){
+      margin-right: 8px;
+    }
+    
+    &:nth-child(4n){
+      margin-top: 15px;
+    }
+  }
+
+  @media screen and(min-width:768px){
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
 }
+
+
 
 .filters__button {
   background-color: var(--section-background);

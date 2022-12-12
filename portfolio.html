@@ -21,32 +21,70 @@
     <header class="header">
       <div class="container">
         <div class="main-nav">
-          <a href="https://denysabramets.github.io/goit-markup-hw-07/index.html" class="main-nav__logo">
+          <div class="main-nav__menu"><a href="https://denysabramets.github.io/goit-markup-hw-07/index.html" class="main-nav__logo">
             <span lang="en" class="main-nav main-nav--blue">Web</span>
             <span lang="en" class="main-nav main-nav--black">Studio</span>
           </a>
-        
-          <nav>
-            <ul class="site-nav list">
-              <li class=" site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
-              <li class=" site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
-              <li class=" site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
-            </ul>
-          </nav>
-          <ul class="link-nav list">
-            <li class="link-nav__item ">
-        
-              <a href="mailto:info@devstudio.com" class="link-nav__link"><svg width="16px" height="12px"
-                  class="link-nav__icon-mail">
-                  <use href="./images/icon.svg#icon-mail"></use>
-                </svg>info@devstudio.com</a>
-            </li>
-            <li class="link-nav__item ">
-              <a href="tel:+380961111111" class="link-nav__link"><svg width="10px" height="16px" class="link-nav__icon-mail">
+          <button class="main-nav__button js-open-menu "
+           type="button" 
+           aria-expanded="false"
+           aria-controls="mobile"  >
+            <svg class="" height="40" width="40" aria-label="Перемикач телефоного меню">
+              <use class="main-nav__cross" href="./images/icon.svg#cross"></use>
+              <use class="main-nav__menu" href="./images/icon.svg#menu"></use>
+              
+            </svg>
+          </button></div>
+          
+          <div class="mobile js-menu-container " >
+            <button 
+            type="button" 
+            class="mobile__button js-close-menu "            
+      
+            
+            aria-expanded="false"
+           aria-controls="mobile" 
+            
+            >
+              <svg class="" height="40" width="40" aria-label="Перемикач телефоного меню">
+
+                <use class="mobile__close" href="./images/icon.svg#cross"></use>
+                
+              </svg>
+              
+            </button>
+            
+            <nav>
+
+    
+              <ul class="site-nav list">
+                <li class=" site-nav__item"><a href="./index.html" class="site-nav__link ">Студія</a></li>
+                <li class=" site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
+                <li class=" site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
+              </ul>
+            </nav>
+            <ul class="link-nav list">
+              <li class="link-nav__item " >
+                
+                <a href="mailto:info@devstudio.com" class="link-nav__link link-nav__link--mail"><svg width="16px" height="12px" class="link-nav__icon-mail"><use href="./images/icon.svg#icon-mail"></use></svg>info@devstudio.com</a 
+                  
+                >
+              </li>
+              <li class="link-nav__item ">
+                <a href="tel:+380961111111" class="link-nav__link link-nav__link--phone"><svg width="10px" height="16px" class="link-nav__icon-mail">
                   <use href="./images/icon.svg#icon-Phone"></use>
                 </svg>+38 096 111 11 11</a>
-            </li>
-          </ul>
+              </li>
+              
+            </ul>
+            <ul class="social list">
+              <li class="social__item"><a class="social__link" href="">Instagram</a></li>
+              <li class="social__item"><a class="social__link" href="">Twitter</a></li>
+              <li class="social__item"><a class="social__link" href="">Facebook</a></li>
+              <li class="social__item"><a class="social__link" href="">LinkedIn</a></li>
+            </ul>
+            
+          </div>
         </div>
     </div>
     </header>
@@ -183,79 +221,81 @@
     <footer class="footer">
       <div class="container">
         <div class="thumb">
-          <div class="footer-adress">
-            <div class="footer-adress__link"><a href="https://denysabramets.github.io/goit-markup-hw-02/index.html"
-                class="footer-adress_logo">
-                <span lang="en" class="footer-adress footer-adress--blue">Web</span>
-                <span lang="en" class="footer-adress footer-adress--white">Studio</span>
-              </a></div>
-            <address class="address">
-              <ul class="address__nav list">
-                <li class="address__item">
-                  <a href="https://goo.gl/maps/JBx5iPBna97AmBD86" target="_blank" rel="noopener noreferrer noflow"
-                    class="address__maps">м. Київ, пр-т Лесі Українки, 26</a>
+          <div class="thumb--position">
+            <div class="footer-adress">
+              <div class="footer-adress__link"><a href="https://denysabramets.github.io/goit-markup-hw-02/index.html" class="footer-adress_logo">
+                  <span lang="en" class="footer-adress footer-adress--blue">Web</span>
+                  <span lang="en" class="footer-adress footer-adress--white">Studio</span>
+                </a></div>
+              <address class="address">
+                <ul class="address__nav list">
+                  <li class="address__item">
+                    <a href="https://goo.gl/maps/JBx5iPBna97AmBD86" target="_blank" rel="noopener noreferrer noflow"
+                      class="address__maps">м. Київ, пр-т Лесі Українки, 26</a>
+                  </li>
+                  <li class="address__list">
+                    <a href="mailto:info@devstudio.com" class="address__text">info@devstudio.com</a>
+                  </li>
+                  <li class="address__list">
+                    <a href="tel:+380961111111" class="address__text">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="breadcrumbs">
+              <h2 class="breadcrumbs__title">Приєднуйтесь</h2>
+              <ul class=" breadcrumbs__sprite list">
+                <li class="breadcrumbs__display">
+                  <a class="breadcrumbs__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                    <svg class="breadcrumbs__icon" width="20px" height="20px">
+                      <use href="./images/icon.svg#icon-instagram"></use>
+                    </svg></a>
                 </li>
-                <li class="address__list">
-                  <a href="mailto:info@devstudio.com" class="address__text">info@devstudio.com</a>
+                <li class="breadcrumbs__display">
+                  <a class="breadcrumbs__link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+                    <svg class="breadcrumbs__icon" width="20px" height="20px">
+                      <use href="./images/icon.svg#icon-twitter"></use>
+                    </svg></a>
+                  
                 </li>
-                <li class="address__list">
-                  <a href="tel:+380961111111" class="address__text">+38 096 111 11 11</a>
-                </li>
+                <li class="breadcrumbs__display"><a class="breadcrumbs__link" href="https://www.facebook.com/" target="_blank"
+                    rel="noreferrer noopener">
+                    <svg class="breadcrumbs__icon" width="20px" height="20px">
+                      <use href="./images/icon.svg#icon-facebook"></use>
+                    </svg></a></li>
+                <li class="breadcrumbs__display"><a class="breadcrumbs__link" href="https://www.linkedin.com/" target="_blank"
+                    rel="noreferrer noopener">
+                    <svg class="breadcrumbs__icon" width="20px" height="20px">
+                      <use href="./images/icon.svg#icon-linkedin"></use>
+                    </svg></a></li>
               </ul>
-            </address>
-          </div>
-          <div class="breadcrumbs">
-            <h2 class="breadcrumbs__title">Приєднуйтесь</h2>
-            <ul class="list">
-              <li class="breadcrumbs__display">
-                <a class="breadcrumbs__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
-                  <svg class="breadcrumbs__icon" width="20px" height="20px">
-                    <use href="./images/icon.svg#icon-instagram"></use>
-                  </svg></a>
-              </li>
-              <li class="breadcrumbs__display">
-                <a class="breadcrumbs__link" href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
-                  <svg class="breadcrumbs__icon" width="20px" height="20px">
-                    <use href="./images/icon.svg#icon-twitter"></use>
-                  </svg></a>
-    
-              </li>
-              <li class="breadcrumbs__display"><a class="breadcrumbs__link" href="https://www.facebook.com/" target="_blank"
-                  rel="noreferrer noopener">
-                  <svg class="breadcrumbs__icon" width="20px" height="20px">
-                    <use href="./images/icon.svg#icon-facebook"></use>
-                  </svg></a></li>
-              <li class="breadcrumbs__display"><a class="breadcrumbs__link" href="https://www.linkedin.com/" target="_blank"
-                  rel="noreferrer noopener">
-                  <svg class="breadcrumbs__icon" width="20px" height="20px">
-                    <use href="./images/icon.svg#icon-linkedin"></use>
-                  </svg></a></li>
-            </ul>
-    
-    
+            
+            
+            </div>
           </div>
           <div class="aside">
             <h2 class="aside__title">Підпишіться на розсилку</h2>
-            <form autocomplete="off">
-              <div class="aside__mail"><label for="email"></label>
-                <input class="aside__input" type="email" name="email" placeholder="E-mail" required>
-                <button class="aside__button" type="submit">
-                  Підписатися <svg class="aside__icon" width="24px" height="24px">
-                    <use href="./images/icon.svg#icon-footer-telegram"></use>
-                  </svg>
-                </button>
+            <form autocomplete="off" >
+                <div class="aside__mail"><label for="email"></label>
+                  <input class="aside__input" type="email" name="email" placeholder="E-mail" required >
+                  <button class="aside__button" type="submit">
+                    Підписатися <svg class="aside__icon" width="24px" height="24px">
+                      <use href="./images/icon.svg#icon-footer-telegram"></use>
+                    </svg>
+                  </button>
+                </div>
+                </form>
+                </div>
+                
+                
+                
+                
               </div>
-            </form>
-          </div>
+
     
-    
-    
-    
-        </div>
-    
-    
-      </div>
-    
+    </div>
+      
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
